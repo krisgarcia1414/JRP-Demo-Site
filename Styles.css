@@ -317,7 +317,7 @@
 
 /* Hamburger Toggle Button */
 .menu-toggle {
-  display: none;
+  display: none !important;
   font-size: 2rem;
   color: #F9B500;
   cursor: pointer;
@@ -331,7 +331,7 @@
 
 @media (max-width: 768px) {
   .menu-toggle {
-    display: block;
+    display: block !important;
   }
 
   .nav ul {
