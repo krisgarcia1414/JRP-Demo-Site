@@ -314,4 +314,40 @@
       font-size: 1.2rem;
     }
   }
-  
+
+/* Hamburger Toggle Button */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: #F9B500;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Mobile Navigation Hidden by Default */
+.nav {
+  transition: max-height 0.3s ease-out;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    background: #000;
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+  }
+
+  .nav.open ul {
+    max-height: 500px; /* enough to show all links */
+  }
+
+  .nav ul li {
+    margin: 15px 0;
+  }
+}
+
