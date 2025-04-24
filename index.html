@@ -19,18 +19,20 @@
         <a href="tel:6307709870" class="phone">630-770-9870</a>
         <a href="mailto:jrpconstruction@gmail.com" class="email">jrpconstruction@gmail.com</a>
       </div>
-      <nav class="nav">
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
   <!-- Hero Section -->
   <section id="hero" class="hero-section">
@@ -164,6 +166,14 @@
       <p>&copy; 2025 J.R.P. Construction. All Rights Reserved.</p>
     </div>
   </footer>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('nav');
+
+  menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
+</script>
 
 </body>
 </html>
